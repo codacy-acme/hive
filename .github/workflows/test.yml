@@ -1,4 +1,4 @@
-name: Dart CI
+name: Codacy Test
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+
       - name: Run Codacy CLI
         uses: codacy/codacy-cli-v2-action@main
         with:
